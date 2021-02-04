@@ -25,6 +25,11 @@ chrome.commands.onCommand.addListener((command) => {
     if (!activeTab) {
       return;
     }
-    chrome.tabs.update(state.recent, {active: true});
+    chrome.tabs.query({currentWindow: true}, (tabs) => {
+      const recentTabExists = Boolean(tabs.filter((tab) => tab.id === state.recent)?.[0]);
+      if (recentTabExists) {
+        chrome.tabs.update(state.recent, {active: true});
+      }
+    });
   });
 });
