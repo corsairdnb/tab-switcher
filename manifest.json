@@ -23,7 +23,7 @@
     "switch-tab": {
       "suggested_key": {
         "default": "Alt+Q",
-        "mac": "Alt+Q"
+        "mac": "Ctrl+Q"
       },
       "description": "Switch tab"
     }
