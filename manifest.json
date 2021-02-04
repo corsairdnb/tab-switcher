@@ -1,6 +1,6 @@
 {
   "name": "Alt+Q Tab Switcher",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "manifest_version": 2,
   "description": "Allows to quickly switch between 2 recent tabs using Alt+Q shortcut",
   "homepage_url": "https://github.com/corsairdnb/tab-switcher",
